@@ -1,0 +1,24 @@
+SetEnv force-no-vary
+php_flag display_errors off
+SetEnv downgrade-1.0
+# REWRITE MOD
+RewriteEngine on
+# URL
+RewriteBase /
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule . - [L]
+
+# MODULES URL
+RewriteRule ^([-a-zA-Z0-9]+)/?$ index.php?do=$1 [L]
+RewriteRule ^news/([-0-9]+)/?$ index.php?do=news&id=$1 [L,NC]
+RewriteRule ^profile/([-0-9]+)/?$ index.php?do=profile&steamid=$1 [L,NC]
+RewriteRule ^spot/([-0-9]+)/?$ index.php?do=spot&spotgame=$1 [L,NC]
+RewriteRule ^rooms/([-0-9]+)/?$ index.php?do=rooms&match=$1 [L,NC]
+RewriteRule ^shop/([-0-9]+)/?$ index.php?do=shop&itemid=$1 [L,NC]
+RewriteRule ^case/([-0-9]+)/?$ index.php?do=case&caseid=$1 [L,NC]
+RewriteRule ^game/([-0-9]+)/?$ index.php?do=game&getgame=$1 [L,NC]
+RewriteRule ^data/(.*)/?$ index.php?do=data&data=$1 [L,NC]
+RewriteRule ^inventory/([-0-9]+)/?$ index.php?do=inventory&inv=$1 [L,NC]
+RewriteRule ^api/(.*)/?$ /sys/api.php?$1 [L,NC]
+AddDefaultCharset UTF-8

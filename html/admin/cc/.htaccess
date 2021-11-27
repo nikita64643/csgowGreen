@@ -1,0 +1,5 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+RewriteRule ^admin/? admin/index.php [L]
+RewriteRule ^users/? users/index.php [L]

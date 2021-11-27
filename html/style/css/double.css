@@ -1,0 +1,1078 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,600,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+.row .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+}.wheel {
+    width: 100%;
+    z-index: 0;
+    display: block;
+}
+.bonus-game-bet-calc,
+.bonus-game-roulette {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top
+}
+.bonus-game-roulette {
+    height: 410px;
+    position: relative
+}
+.game-roulette {
+    width: 90%;
+    padding: 10px;
+}
+.game-roulette-history-item {
+    display: inline-block;
+    color: #fff;
+    border-radius: 28px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 8px;
+    opacity: 1;
+    transition: opacity .3s
+}
+.game-roulette-history-item.zero {
+    background-color: #449d44
+}
+.game-roulette-history-item.red {
+    background-color: #c9302c
+}
+.game-roulette-history-item.black {
+    background-color: #000
+}
+.game-roulette-numbers {
+    background-image: url(../img/bonus-roulette-v2.png);
+    width: 339px;
+    height: 339px;
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    position: absolute;
+    z-index: 2;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: none
+}
+.game-roulette .timer {
+    position: absolute;
+    top: 158px;
+    left: 110px;
+    font-size: 60px;
+    color: #f6e444
+}
+.bonus-game-bet-calc {
+    width: 412px
+}
+.bonus-game-bet-info {
+    margin-top: 12px;
+    padding: 9px 0 15px 12px
+}
+.bonus-game-calc-button-list>li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+.bonus-game-calc-button-list>li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+.bonus-game-calc-button {
+    display: inline-block;
+    margin-right: 1px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+    color: #28adcb;
+    min-height: 34px;
+    min-width: 34px;
+    vertical-align: top;
+    background: #224a5b;
+    background: -moz-linear-gradient(top, #50707d 0, #224a5b 20%);
+    background: -webkit-linear-gradient(top, #50707d 0, #224a5b 20%);
+    background: linear-gradient(to bottom, #50707d 0, #224a5b 20%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#50707d', endColorstr='#224a5b', GradientType=0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.bonus-game-calc-button:hover {
+    color: #fff;
+    cursor: pointer
+}
+.bonus-game-calc-button:nth-child(1) {
+    width: 35px
+}
+.bonus-game-calc-button:nth-child(3) {
+    padding: 0 3px 0 0;
+    width: 39px
+}
+.bonus-game-calc-button:nth-child(4) {
+    padding: 0 2px 0 0;
+    width: 49px
+}
+.bonus-game-calc-button:nth-child(5) {
+    width: 44px
+}
+.bonus-game-calc-button:nth-child(6) {
+    width: 52px
+}
+.bonus-game-calc-button:nth-child(8) {
+    width: 41px
+}
+.bonus-game-calc-button:nth-child(9) {
+    width: 47px
+}
+.bonus-game-bet-input-container {
+    margin: 10px 0 12px;
+    padding: 0 15px 0 2px
+}
+.bonus-game-bet-input-container .bonus-game-bet-input {
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    color: #000;
+    padding-left: 12px
+}
+.bonus-room .game-content .place-bet-buttons-text {
+    padding-left: 2px
+}
+.bonus-room .game-content .place-bet-buttons {
+    margin-top: 6px
+}
+.lace-bet-buttons-text {
+    padding-left: 2px
+}
+.bonus-game-calc-place-bet {
+    width: 113px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 12px;
+    cursor: pointer;
+    font-weight: 700
+}
+.bonus-room .bonus-game-info p,
+.bonus-room .game-content p {
+    margin: 0;
+    padding: 0
+}
+.game-roulette-history {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+.bonus-room .game-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.bonus-room .game-content {
+    background-color: #23252c;
+    color: #fff;
+    padding: 19px 0 24px 24px
+}
+
+.game-bets-list {
+	list-style: none;
+    overflow: hidden;
+    transition: transform .5s
+}
+.bonus-game-info .game-hash-info {
+    margin-left: 22px;
+    font-size: 12px;
+    padding-top: 8px
+}
+.bonus-game-info .game-hash-info>p:first-child {
+    padding-bottom: 2px
+}
+.bonus-game-info .fairplay {
+    float: right;
+    width: 103px;
+    border-radius: 2px;
+    padding: 4px 5px 0 5px;
+    background-color: #2988a6;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 16px;
+    margin-top: 12px;
+    color: #FFF;
+    text-decoration: none
+}
+.bonus-game-state-container {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative
+}
+.bonus-game-timer {
+    position: absolute;
+    top: 34px;
+    left: 71px;
+    height: 200px;
+    width: 200px;
+    margin: 2em auto;
+    border-radius: 100%
+}
+.bonus-game-timer:after {
+    position: absolute;
+    display: block;
+    height: 160px;
+    width: 160px;
+    left: 67px;
+    top: 0;
+    content: attr(data-left-seconds);
+    line-height: 199px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #f6e444
+}
+.bonus-game-timer-svg circle {
+    stroke-dashoffset: 0;
+    stroke-width: 27px;
+    stroke: #f6e444;
+    fill: transparent;
+    transform: rotate(270deg) translate3d(-200px, 0, 0);
+    -webkit-transform: rotate(270deg) translate3d(-200px, 0, 0)
+}
+.bonus-game-end,
+.bonus-game-pre-end {
+    text-transform: uppercase;
+    position: absolute;
+    height: 158px;
+    width: 158px;
+    border-radius: 79px;
+    line-height: 156px;
+    top: 92px;
+    left: 92px;
+    text-align: center;
+    font-weight: 700
+}
+.bonus-game-pre-end {
+    color: #182328;
+    background-color: #f6e444;
+    font-size: 17px
+}
+.bonus-game-end {
+    display: none;
+    color: #fff;
+    font-size: 40px
+}
+.bonus-game-end.red {
+    background-color: #CB2E25
+}
+.bonus-game-end.zero {
+    background-color: #439c44
+}
+.bonus-game-end.black {
+    background-color: #000
+}
+.bonus-game-state-container .bonus-game-state.back,
+.bonus-game-state-container .bonus-game-state.front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute
+}
+.bonus-game-state-container .bonus-game-state.front {
+    z-index: 2;
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0)
+}
+.bonus-game-state-container .bonus-game-state.back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg)
+}
+.bonus-game-state-container .bonus-game-state.back.bonus-game-end,
+.bonus-game-state-container .bonus-game-state.back.bonus-game-pre-end {
+    left: 150px
+}
+.bonus-game-state-container .bonus-game-state.back.bonus-game-timer {
+    left: 129px
+}
+.game-roulette-history {
+    width: 353px;
+    overflow-x: hidden;
+    height: 28px
+}
+ul.game-roulette-history-list {
+    transition: transform .5s;
+    width: 1000px;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0)
+}
+.game-bets-container {
+    overflow-y: hidden
+}
+.bonus-game-auth {
+    position: absolute;
+    top: 95px;
+    text-align: center;
+    width: 412px;
+    display: none
+}
+.bonus-game-auth>div {
+    text-shadow: 0 0 6px #000
+}
+.bonus-game-auth .auth-link {
+    margin-top: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .8)
+}
+.bonus-game-bet-value-container {
+    background-color: #182328;
+    width: 386px;
+    height: 30px;
+    margin-top: 5px;
+    position: relative
+}
+.bonus-game-bet-value-container:nth-child(1) {
+    margin-top: 7px
+}
+.bonus-game-bet-value-container .bonus-game-bet-value-progress {
+    height: 100%;
+    width: 0;
+    transition: width .5s
+}
+
+
+.bonus-room .sprite {
+    background-image: url(../img/bonus-room-sprites.png);
+    background-repeat: no-repeat
+}
+.bonus-room .sprite.repeat-bet {
+    width: 20px;
+    height: 18px;
+    background-position: -35px -5px;
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px
+}
+.bonus-room .sprite.repeat-bet:hover {
+    background-position: -5px -5px
+}
+.bonus-room .sprite.clear {
+    width: 14px;
+    height: 16px;
+    background-position: -89px -5px;
+    margin-top: 9px;
+    margin-left: 10px;
+    display: block
+}
+.bonus-room .sprite.clear:hover {
+    background-position: -65px -5px
+}
+.bonus-room .sprite.add-bonus {
+    width: 21px;
+    height: 21px;
+    background-position: -113px -5px;
+    display: inline-block;
+    vertical-align: sub;
+    margin-left: 11px
+}
+.bonus-room .sprite.add-bonus:hover {
+    cursor: pointer
+}
+.bonus-room .sprite.game-roulette-cursor {
+    width: 18px;
+    height: 39px;
+    background-position: -144px -5px;
+    position: absolute;
+    top: 165px;
+    right: 57px;
+    z-index: 3
+}
+.bonus-room .sprite.game-roulette-cursor-shadow {
+    width: 22px;
+    height: 59px;
+    background-position: -172px -5px;
+    position: absolute;
+    right: 56px;
+    top: 155px;
+    z-index: 1
+}
+.bonus-room .sprite.bonus-black-button {
+    background-position: -5px -36px
+}
+.bonus-room .sprite.bonus-black-button:hover {
+    background-position: -5px -86px
+}
+.bonus-room .sprite.bonus-red-button {
+    background-position: -5px -136px
+}
+.bonus-room .sprite.bonus-red-button:hover {
+    background-position: -204px -5px
+}
+.bonus-room .sprite.bonus-zero-button {
+    width: 115px;
+    background-position: -204px -55px
+}
+.bonus-room .sprite.bonus-zero-button:hover {
+    background-position: -142px -105px
+}
+.bonus-room .bonus-game-info {
+    color: #fff;
+    border-bottom: 1px solid #182328
+}
+.bonus-game-info .fairplay,
+.bonus-game-info .game-hash-info,
+.bonus-game-info .game-title {
+    display: inline-block;
+    vertical-align: top
+}
+.bonus-game-info {
+    background-color: #19343f;
+    height: 50px
+}
+.bonus-game-info .game-title {
+    background-color: #2988a6;
+    position: relative;
+    width: 140px;
+    height: 100%;
+    line-height: 52px;
+    padding-left: 25px;
+    overflow: visible
+}
+.bonus-game-info .game-title:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -13px;
+    border-style: solid;
+    border-width: 26px 0 25px 14px;
+    border-color: transparent transparent transparent #2988a6
+}
+.bonus-room .sprite {
+    background-image: url(../images/bonus-room-sprites.png);
+    background-repeat: no-repeat;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bonus-game-calc-place-bet {
+    width: 113px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.bonus-game-bet-value-container.red .bonus-game-bet-value-progress {
+    background: #d42421;
+    background: -moz-linear-gradient(top, #e8413d 0, #d42421 100%);
+    background: -webkit-linear-gradient(top, #e8413d 0, #d42421 100%);
+    background: linear-gradient(to bottom, #e8413d 0, #d42421 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e8413d', endColorstr='#d42421', GradientType=0)
+}
+.bonus-game-bet-value-container.zero .bonus-game-bet-value-progress {
+    background: #379337;
+    background: -moz-linear-gradient(top, #66c466 0, #379337 100%);
+    background: -webkit-linear-gradient(top, #66c466 0, #379337 100%);
+    background: linear-gradient(to bottom, #66c466 0, #379337 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#66c466', endColorstr='#379337', GradientType=0)
+}
+.bonus-game-bet-value-container.black .bonus-game-bet-value-progress {
+    background: #192429;
+    background: -moz-linear-gradient(top, #5d6568 0, #192429 100%);
+    background: -webkit-linear-gradient(top, #5d6568 0, #192429 100%);
+    background: linear-gradient(to bottom, #5d6568 0, #192429 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5d6568', endColorstr='#192429', GradientType=0)
+}
+.bonus-game-bet-value {
+    width: 100%;
+    height: 33px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    text-align: center;
+    color: #fff
+}
+.bonus-game-bet {
+    transform: translate3d(1000px, 0, 0);
+    -webkit-transform: translate3d(1000px, 0, 0);
+    transition: transform .2s
+}
+.bonus-game-bet.showed {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0)
+}
+.bonus-game-bet .avatar,
+.bonus-game-bet .bet-value,
+.bonus-game-bet .bonus-game-bet-user-info,
+.bonus-game-bet .user-name {
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle
+}
+.bonus-game-bet.zero {
+    background-color: #3d8a40
+}
+.bonus-game-bet.black {
+    background-color: #19343f
+}
+.bonus-game-bet.red {
+    background-color: #ae2e2b
+}
+.bonus-game-bet-user-info {
+    padding: 5px 0 5px 22px;
+    position: relative;
+    width: 570px
+}
+.bonus-game-bet-user-info:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -20px;
+    border-style: solid;
+    border-width: 30px 0 29px 21px
+}
+.bonus-game-bet.zero .bonus-game-bet-user-info {
+    background-color: #439c44
+}
+.bonus-game-bet.black .bonus-game-bet-user-info {
+    background-color: #182328
+}
+.bonus-game-bet.red .bonus-game-bet-user-info {
+    background-color: #c7302c
+}
+.bonus-game-bet.zero .bonus-game-bet-user-info:after {
+    border-color: transparent transparent transparent #439c44
+}
+.bonus-game-bet.black .bonus-game-bet-user-info:after {
+    border-color: transparent transparent transparent #182328
+}
+.bonus-game-bet.red .bonus-game-bet-user-info:after {
+    border-color: transparent transparent transparent #c7302c
+}
+.bonus-game-bet:not(:last-child) {
+    border-bottom: 1px solid #0d161b
+}
+.bonus-game-bet:nth-child(n+30) {
+    border-bottom: none
+}
+.bonus-game-bet .avatar {
+    background-image: url(../img/avatars/img-01.jpg);
+    width: 49px;
+    height: 49px;
+    background-size: cover
+}
+.bonus-game-bet .user-name {
+    margin-left: 10px
+}
+.bonus-game-bet .bet-value {
+    width: 131px;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 700
+}
+.bonus-game-bet-info,
+.bonus-game-calc {
+    padding: 15px 10px 12px 10px;
+    border-radius: 6px;
+    background-color: #323640;
+    margin-top: 15px
+}
+.bonus-value-container {
+    padding: 7px 0 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px
+}
+.bonus-user-value {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    letter-spacing: 0;
+    -webkit-animation-duration: 1s;
+    transition: color 1s
+}
+@-webkit-keyframes is-not-enough {
+    from {
+        color: #fff
+    }
+    25% {
+        color: red
+    }
+    50% {
+        color: #fff
+    }
+    75% {
+        color: red
+    }
+    to {
+        color: #fff
+    }
+}
+#page-wrapper {
+    background: rgba(29, 29, 29, 0.74);
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    z-index: 1;
+    background: #333;
+    color: #FFF;
+    width: 100%;
+}
+
+#navbar {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+#navbar .nav {
+    position: relative;
+}
+
+#navbar .nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar .nav li a {
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    transition: color .3s;
+    text-decoration: none;
+    color: #CCC;
+    display: block;
+    padding: 10px 10px;
+}
+
+#navbar .nav li a:hover {
+    color: #5DA279;
+}
+
+#navbar .nav #logo a {
+    font-weight: bold;
+}
+
+#navbar .nav ul {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    background: rgba(50, 50, 50, .8);
+}
+
+#navbar .nav ul li {
+    display: block;
+}
+
+#navbar .nav ul li a {
+    width: 150px;
+    padding: 2.5px 5px;
+}
+
+#navbar .nav ul li a:hover {
+    color: #5DA279;
+}
+
+#navbar .nav .dropdown:hover ul {
+    display: block;
+}
+
+#navbar .nav .dropdown {
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.dropdown .fa-caret-down {
+    margin-left: 5px;
+}
+
+#main-wrapper {
+    padding: 1em;
+}
+
+#csgobig span {
+    display: none;
+    position: absolute
+}
+
+#csgobig {
+    width: 600px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: .2.5em;
+    padding-top: 1em;
+}
+
+#csgobig img {
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 70px;
+}
+/* NOTICES */
+
+.note {
+    font-family: Arial;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.progressg {
+    background: #cfcfcf;
+    overflow: hidden;
+}
+.progressg .line {
+   background:rgb(23,44,60); 
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+@-webkit-keyframes animate-stripes{0%{background-position:0 0;}100%{background-position:60px 0;}}@-moz-keyframes animate-stripes{0%{background-position:0 0;}100%{background-position:60px 0;}}}
+@keyframes city {
+    from {
+        background-position: -1000px 100%, 0 0;
+    }
+    to {
+        background-position: 0 100%, 0 0;
+    }
+}
+@-webkit-keyframes city {
+    from {
+        background-position: -1000px 100%, 0 0;
+    }
+    to {
+        background-position: 0 100%, 0 0;
+    }
+}
+
+.note i {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15pt;
+}
+
+.note p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.note-default {
+    background: rgba(52, 152, 219, 0.6);
+}
+
+.note-success {
+    background: rgba(46, 201, 67, 0.6);
+}
+
+.note-warning {
+    background: rgba(238, 98, 98, 0.6);
+}
+
+.box {
+    margin: auto;
+    text-align: left;
+    position: relative;
+    font-size: 10pt;
+    color: #FFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #323640;
+    border-radius: 2.5px;
+}
+
+#main-wrapper {
+    margin: auto;
+    width: 1060px;
+    color: #CCC;
+    padding: 10px;
+}
+
+#sidebar {
+    padding: 10px;
+    margin: 5px;
+    width: 400px;
+    float: left;
+}
+
+#mainf {
+    text-align: center;
+    margin: 5px;
+    width: 600px;
+    float: left;
+    padding: 10px;
+}
+
+#chat {}
+
+#chat h3 {
+    font-family: "Lora", sans-serif;
+    text-align: center;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#chat-box {
+    height: 400px;
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    overflow: auto;
+}
+
+#chat-input {
+    color: #CCC;
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    border-top: solid 1px rgba(0, 0, 0, .3);
+    outline: none;
+    font-family: "Lora", sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 380px;
+}
+
+.chat-msg {
+    display: block;
+    font-size: 9pt;
+    position: relative;
+    padding: 5px;
+}
+
+.chat-msg:nth-child(odd) {
+    background: rgba(0, 0, 0, .3);
+}
+
+.chat-msg .chat-avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.chat-msg .chat-con {
+    width: 330px;
+    padding-left: 2.5px;
+    display: inline-block;
+}
+
+.chat-msg .chat-con .c-name {
+    color: darkgray;
+}
+
+.chat-msg .chat-con .c-msg {
+    display: block;
+}
+
+#slider {
+    background-image: url(http://tryhardhusky.com/images/21.png);
+    height: 45px;
+    width: 600px;
+    position: relative;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1px;
+    border: none;
+    outline: none;
+}
+
+#slider .pointer {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #000;
+}
+/* Buttons */
+
+.bets .btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ccc;
+    width: 200px;
+    margin: 0;
+    padding: 5px 0px;
+    font-size: 10pt;
+    background: rgba(128, 128, 128, 1);
+}
+
+.bets .btn-red{
+    background: rgba(253, 83, 83, 0.65);
+}
+.bets .btn-green{
+    background: rgba(83, 253, 104, 0.65);
+}
+.bets .btn-black{
+    background: rgba(101, 101, 101, 0.65);
+}
+
+.bets .btn:not(:nth-last-child(1)){
+    border-right: solid 1px rgba(0, 0, 0, .3);
+}
+
+.bets .btn:active{
+    box-shadow:  inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#betbox {
+    font-size: 0px;
+    text-align: left;
+}
+#betbox .row{
+    display: block;
+    font-size: 10pt;
+    width: 600px;
+}
+#betbox .row.bets{
+    font-size: 0pt;
+    text-align: center;
+}
+#betbox .row.bbox{
+    font-size: 0pt;
+}
+#betbox .row #goldcount{
+    font-size: 10pt;
+    display: inline-block;
+    text-align: center;
+    width: 88px;
+    color: #CCC;
+    border: none;
+    background: rgba(255, 255, 255, .1);
+    border-top: solid 1px rgba(0, 0, 0, .3);
+    outline: none;
+    font-family: "Lora", sans-serif;
+    margin: 0;
+    padding: 12px 10px;
+    border: solid thin black;
+}
+#betbox .row #bet{
+    font-size: 10pt;
+    display: inline-block;
+    text-align: center;
+    width: 409px;
+    color: #CCC;
+    height: 18px;
+    margin-top: -8px;
+    border: none;
+    background: rgba(255, 255, 255, .3);
+    border: solid 1px rgba(0, 0, 0, .3);
+    border: solid thin black;
+    border-left: none;
+    outline: none;
+    font-family: "Lora", sans-serif;
+    /* margin: 0; */
+    padding: 10px;
+}
+
+#betbox .row.quick{
+    font-size: 0pt;
+}
+#betbox .row.quick button {
+    cursor: pointer;
+    text-align: center;
+    width: 85.7px;
+    border: none;
+    padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    outline: none;
+    background: rgba(0,0,0,.1);
+    color: #ccc;
+    border-top: solid thin black;
+    border-bottom: solid thin black;
+    border-left: solid thin black;
+}
+#betbox .row.quick button:nth-child(odd){
+    background: rgba(0,0,0,.3);
+}
+#betbox .row.quick button:nth-last-child(1){
+    border-right: solid thin black;
+}
+#betbox .row.quick button:hover{
+    color: green;
+}
+#betbox .row.quick button:active{
+    color: darkgreen;
+}
+#betbox .row.help p{
+    font-style: italic;
+    font-size: 9pt;
+    padding: 10px;
+    color: gray;
+}
+
+#betbox .row.pots{
+    font-size: 0pt;
+}
+#betbox .row.pots span{
+    width: 179px;
+    font-size: 8pt;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1);
+    padding: 5px 10px;
+    position: relative;
+}
+#betbox .row.pots .line:nth-child(even) span{
+    background-color: transparent;
+}
+#betbox .row.pots span b{
+    font-weight: normal;
+    float: right;
+}
+
+#betbox .row.pots span:not(:nth-last-child(1)){
+    border-right: solid 1px rgba(0, 0, 0, .3);
+}
+#betbox .row.pots .line:nth-last-child(1){
+    border-bottom: solid 1px rgba(0, 0, 0, .3);
+}
+
+.red-reward b,
+.black-reward b,
+.green-reward b{
+    color: green;
+}
+
+.red-return b,
+.black-return b,
+.green-return b{
+    color: rgba(250,50,50,1);
+}
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 650px) {}

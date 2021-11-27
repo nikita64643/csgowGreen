@@ -1,0 +1,312 @@
+.matchmain {
+	background: #fff;
+    float: left;
+    width: 100%;
+    margin-bottom: 22px
+}
+.match .oitm {
+    width: 24%
+}
+sectionitems {
+    height: 213px;
+    width: 600px;
+    position: absolute;
+    display: run-in;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: -232px;
+    margin-left: 35px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+section {
+    height: 120px;
+    width: 600px;
+    position: absolute;
+    display: run-in;
+    /* top: 50%; */
+    margin: 0 auto;
+    /* left: 50%; */
+    background-color: #fff;
+    padding: 10px;
+    /* margin-top: -100px; */
+    margin-left: 237px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+}
+section button {
+  background: 0;
+  border: 0;
+  height: 120px;
+  width: 20%;
+  float: left;
+}
+section button .fa {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 20px;
+}
+section button:hover {
+  /*background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209282/play.png');
+  background-size: contain;
+  background-repeat: no-repeat;*/
+}
+section button.win {
+  color: #15a015;
+}
+section button.loss {
+  color: #ff1515;
+}
+section button.tie {
+  color: #1515ff;
+}
+section .result {
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    margin-left: -12px;
+    padding: 13px;
+    width: 600px;
+    color: #000;
+    background: #fff;
+    margin-top: 150px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+}
+section .result .animated {
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+}
+
+aside {
+  height: 350px;
+  background-color: #e9eaed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+aside .legend {
+	    margin-top: -50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 10px 0;
+}
+aside .legend .me, aside .legend .cpu {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+.myitems{
+	width: 50%;
+    float: left;
+    overflow-y: scroll;
+    min-height: 170px;
+    max-height: 164px;
+    text-align: center;
+}
+.youritems{
+	width: 50%;
+    float: left;
+    overflow-y: scroll;
+    min-height: 170px;
+    max-height: 164px;
+    text-align: center;
+}
+sectionitems .legend {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 10px 0;
+}
+sectionitems .legend .me, sectionitems .legend .cpu {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+aside .history-item {
+  height: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+aside .history-item.win {
+  background-color: rgba(0, 150, 0, 0.1);
+}
+aside .history-item.loss {
+  background-color: rgba(150, 0, 0, 0.1);
+}
+aside .history-item.tie {
+  background-color: rgba(0, 0, 150, 0.1);
+}
+aside .history-item .fa {
+  text-align: center;
+  width: 50%;
+}
+aside .addscore{
+	min-height: 350px;
+	max-height: 350px;
+    overflow-y: scroll;
+}
+aside .scoreboard {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 -1px 10px 0;
+}
+aside .scoreboard .win, aside .scoreboard .loss, aside .scoreboard .tie, aside .scoreboard .move {
+  height: 40px;
+  line-height: 20px;
+  font-size: 11px;
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.matchheader {
+    float: left;
+    width: 98%;
+    color: #fff;
+    padding: .6em 1%;
+    border-top: solid 1px #ccc;
+    background: #48525e;
+    /* background: radial-gradient(ellipse at top, #eee 0, #d7d7d7 70%); */
+}
+.matchleft {
+    width: 98%;
+    float: left;
+    margin: 12px 1%
+}
+.matchright {
+    width: 28%;
+    float: left;
+    margin: .5em 1%
+}
+.whenm,
+.eventm {
+    font-size: .8rem;
+    float: left;
+}
+.eventm {
+    float: right
+}
+.tournament {
+    width: 60%;
+    float: right
+}
+.betpoll {
+    float: left;
+    min-height: 10px;
+    float: left;
+    margin: .5em 1.5%;
+    width: 97%
+}
+.betpoll #active {
+    min-height: 50px;
+    display: block
+}
+.betpoll .oitm {
+    width: 24%
+}
+.betpoll .left {
+    margin: 0
+}
+.betpoll .left::before {
+    display: none
+}
+.winsorloses {
+    float: left;
+    width: 98%;
+    max-width: 400px;
+    margin: .5em 1%;
+    background: #BBB;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+.winsorloses .oitm {
+    width: 24%
+}
+.betheader {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: .5em 2% 0 2%;
+    width: 96%;
+    float: left
+}
+.team {
+    width: 60px;
+    height: 50px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+.teamtext {
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 1.4em;
+    text-align: center
+}
+.potwin {
+    color: #ff8a00;
+    margin: 0 1%;
+    font-size: .8rem;
+    padding: 3px;
+    float: left;
+    background: #171717;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+#teamA,
+#teamB,
+.yourVal {
+    color: #ff8a00
+}
+#bets .oitm {
+    width: 24%
+}
+#avatar {
+    margin: 1% 0 0 1%
+}
+#replist {
+    margin-left: .5rem;
+    line-height: 1.75rem
+}
+#replist a {
+    color: #333
+}
+#replist li:nth-child(even) {
+    background: #CCC
+}
+.inputfield {
+    color: #9ad243;
+    border: 0;
+    background-color: #333;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 4px
+}
